@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tspack"
+version = "0.1.0"
+description = "Selective single-.so tree-sitter language pack (pure C/C++, zero Rust, Termux-friendly)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["tree-sitter>=0.22"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tspack = ["py.typed", "_binding.pyi"]

@@ -1,0 +1,330 @@
+# Selective tree-sitter grammar manifest for tspack.
+# Default build compiles all entries with enabled = true (~22 core languages).
+# Override selection at fetch/build time via:
+#   TSPACK_LANGS=python,javascript,bash,c,cpp,rust,go,html,css,lua,toml,json
+
+[languages.bash]
+repo = "https://github.com/tree-sitter/tree-sitter-bash.git"
+repo_dir = "tree-sitter-bash"
+src_dir = "src"
+symbol = "tree_sitter_bash"
+enabled = true
+
+[languages.c]
+repo = "https://github.com/tree-sitter/tree-sitter-c.git"
+repo_dir = "tree-sitter-c"
+src_dir = "src"
+symbol = "tree_sitter_c"
+enabled = true
+
+[languages.cpp]
+repo = "https://github.com/tree-sitter/tree-sitter-cpp.git"
+repo_dir = "tree-sitter-cpp"
+src_dir = "src"
+symbol = "tree_sitter_cpp"
+enabled = true
+
+[languages.css]
+repo = "https://github.com/tree-sitter/tree-sitter-css.git"
+repo_dir = "tree-sitter-css"
+src_dir = "src"
+symbol = "tree_sitter_css"
+enabled = true
+
+[languages.go]
+repo = "https://github.com/tree-sitter/tree-sitter-go.git"
+repo_dir = "tree-sitter-go"
+src_dir = "src"
+symbol = "tree_sitter_go"
+enabled = true
+
+[languages.html]
+repo = "https://github.com/tree-sitter/tree-sitter-html.git"
+repo_dir = "tree-sitter-html"
+src_dir = "src"
+symbol = "tree_sitter_html"
+enabled = true
+
+[languages.java]
+repo = "https://github.com/tree-sitter/tree-sitter-java.git"
+repo_dir = "tree-sitter-java"
+src_dir = "src"
+symbol = "tree_sitter_java"
+enabled = true
+
+[languages.javascript]
+repo = "https://github.com/tree-sitter/tree-sitter-javascript.git"
+repo_dir = "tree-sitter-javascript"
+src_dir = "src"
+symbol = "tree_sitter_javascript"
+enabled = true
+
+[languages.json]
+repo = "https://github.com/tree-sitter/tree-sitter-json.git"
+repo_dir = "tree-sitter-json"
+src_dir = "src"
+symbol = "tree_sitter_json"
+enabled = true
+
+[languages.lua]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-lua.git"
+repo_dir = "tree-sitter-lua"
+src_dir = "src"
+symbol = "tree_sitter_lua"
+enabled = true
+
+[languages.php]
+repo = "https://github.com/tree-sitter/tree-sitter-php.git"
+repo_dir = "tree-sitter-php"
+src_dir = "php/src"
+symbol = "tree_sitter_php"
+enabled = true
+
+[languages.python]
+repo = "https://github.com/tree-sitter/tree-sitter-python.git"
+repo_dir = "tree-sitter-python"
+src_dir = "src"
+symbol = "tree_sitter_python"
+enabled = true
+
+[languages.ruby]
+repo = "https://github.com/tree-sitter/tree-sitter-ruby.git"
+repo_dir = "tree-sitter-ruby"
+src_dir = "src"
+symbol = "tree_sitter_ruby"
+enabled = true
+
+[languages.rust]
+repo = "https://github.com/tree-sitter/tree-sitter-rust.git"
+repo_dir = "tree-sitter-rust"
+src_dir = "src"
+symbol = "tree_sitter_rust"
+enabled = true
+
+[languages.sql]
+repo = "https://github.com/DerekStride/tree-sitter-sql.git"
+repo_dir = "tree-sitter-sql"
+ref = "gh-pages"
+src_dir = "src"
+symbol = "tree_sitter_sql"
+enabled = true
+
+[languages.toml]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-toml.git"
+repo_dir = "tree-sitter-toml"
+src_dir = "src"
+symbol = "tree_sitter_toml"
+enabled = true
+
+[languages.tsx]
+repo = "https://github.com/tree-sitter/tree-sitter-typescript.git"
+repo_dir = "tree-sitter-typescript"
+src_dir = "tsx/src"
+symbol = "tree_sitter_tsx"
+enabled = true
+
+[languages.typescript]
+repo = "https://github.com/tree-sitter/tree-sitter-typescript.git"
+repo_dir = "tree-sitter-typescript"
+src_dir = "typescript/src"
+symbol = "tree_sitter_typescript"
+enabled = true
+
+[languages.vim]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-vim.git"
+repo_dir = "tree-sitter-vim"
+src_dir = "src"
+symbol = "tree_sitter_vim"
+enabled = true
+
+[languages.xml]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-xml.git"
+repo_dir = "tree-sitter-xml"
+src_dir = "xml/src"
+symbol = "tree_sitter_xml"
+enabled = true
+
+[languages.yaml]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-yaml.git"
+repo_dir = "tree-sitter-yaml"
+src_dir = "src"
+symbol = "tree_sitter_yaml"
+enabled = true
+
+[languages.zsh]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-zsh.git"
+repo_dir = "tree-sitter-zsh"
+src_dir = "src"
+symbol = "tree_sitter_zsh"
+enabled = true
+
+# --- Optional extra languages (enable via enabled = true or TSPACK_LANGS=...) ---
+
+[languages.c_sharp]
+repo = "https://github.com/tree-sitter/tree-sitter-c-sharp.git"
+repo_dir = "tree-sitter-c-sharp"
+src_dir = "src"
+symbol = "tree_sitter_c_sharp"
+enabled = false
+
+[languages.cmake]
+repo = "https://github.com/uyha/tree-sitter-cmake.git"
+repo_dir = "tree-sitter-cmake"
+src_dir = "src"
+symbol = "tree_sitter_cmake"
+enabled = false
+
+[languages.dockerfile]
+repo = "https://github.com/camdencheek/tree-sitter-dockerfile.git"
+repo_dir = "tree-sitter-dockerfile"
+src_dir = "src"
+symbol = "tree_sitter_dockerfile"
+enabled = false
+
+[languages.make]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-make.git"
+repo_dir = "tree-sitter-make"
+src_dir = "src"
+symbol = "tree_sitter_make"
+enabled = false
+
+[languages.scss]
+repo = "https://github.com/serenadeai/tree-sitter-scss.git"
+repo_dir = "tree-sitter-scss"
+src_dir = "src"
+symbol = "tree_sitter_scss"
+enabled = false
+
+[languages.kotlin]
+repo = "https://github.com/fwcd/tree-sitter-kotlin.git"
+repo_dir = "tree-sitter-kotlin"
+src_dir = "src"
+symbol = "tree_sitter_kotlin"
+enabled = false
+
+[languages.scala]
+repo = "https://github.com/tree-sitter/tree-sitter-scala.git"
+repo_dir = "tree-sitter-scala"
+src_dir = "src"
+symbol = "tree_sitter_scala"
+enabled = false
+
+[languages.swift]
+repo = "https://github.com/alex-pinkus/tree-sitter-swift.git"
+repo_dir = "tree-sitter-swift"
+src_dir = "src"
+symbol = "tree_sitter_swift"
+enabled = false
+
+[languages.dart]
+repo = "https://github.com/UserNobody14/tree-sitter-dart.git"
+repo_dir = "tree-sitter-dart"
+src_dir = "src"
+symbol = "tree_sitter_dart"
+enabled = false
+
+[languages.zig]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-zig.git"
+repo_dir = "tree-sitter-zig"
+src_dir = "src"
+symbol = "tree_sitter_zig"
+enabled = false
+
+[languages.nix]
+repo = "https://github.com/nix-community/tree-sitter-nix.git"
+repo_dir = "tree-sitter-nix"
+src_dir = "src"
+symbol = "tree_sitter_nix"
+enabled = false
+
+[languages.perl]
+repo = "https://github.com/tree-sitter-perl/tree-sitter-perl.git"
+repo_dir = "tree-sitter-perl"
+ref = "release"
+src_dir = "src"
+symbol = "tree_sitter_perl"
+enabled = false
+
+[languages.r]
+repo = "https://github.com/r-lib/tree-sitter-r.git"
+repo_dir = "tree-sitter-r"
+src_dir = "src"
+symbol = "tree_sitter_r"
+enabled = false
+
+[languages.julia]
+repo = "https://github.com/tree-sitter/tree-sitter-julia.git"
+repo_dir = "tree-sitter-julia"
+src_dir = "src"
+symbol = "tree_sitter_julia"
+enabled = false
+
+[languages.elixir]
+repo = "https://github.com/elixir-lang/tree-sitter-elixir.git"
+repo_dir = "tree-sitter-elixir"
+src_dir = "src"
+symbol = "tree_sitter_elixir"
+enabled = false
+
+[languages.haskell]
+repo = "https://github.com/tree-sitter/tree-sitter-haskell.git"
+repo_dir = "tree-sitter-haskell"
+src_dir = "src"
+symbol = "tree_sitter_haskell"
+enabled = false
+
+[languages.proto]
+repo = "https://github.com/coder3101/tree-sitter-proto.git"
+repo_dir = "tree-sitter-proto"
+src_dir = "src"
+symbol = "tree_sitter_proto"
+enabled = false
+
+[languages.ini]
+repo = "https://github.com/justinmk/tree-sitter-ini.git"
+repo_dir = "tree-sitter-ini"
+src_dir = "src"
+symbol = "tree_sitter_ini"
+enabled = false
+
+[languages.powershell]
+repo = "https://github.com/airbus-cert/tree-sitter-powershell.git"
+repo_dir = "tree-sitter-powershell"
+src_dir = "src"
+symbol = "tree_sitter_powershell"
+enabled = false
+
+[languages.fish]
+repo = "https://github.com/ram02z/tree-sitter-fish.git"
+repo_dir = "tree-sitter-fish"
+src_dir = "src"
+symbol = "tree_sitter_fish"
+enabled = false
+
+[languages.query]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-query.git"
+repo_dir = "tree-sitter-query"
+src_dir = "src"
+symbol = "tree_sitter_query"
+enabled = false
+
+[languages.rst]
+repo = "https://github.com/stsewd/tree-sitter-rst.git"
+repo_dir = "tree-sitter-rst"
+src_dir = "src"
+symbol = "tree_sitter_rst"
+enabled = false
+
+[languages.latex]
+repo = "https://github.com/latex-lsp/tree-sitter-latex.git"
+repo_dir = "tree-sitter-latex"
+src_dir = "src"
+symbol = "tree_sitter_latex"
+enabled = false
+
+[languages.markdown]
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-markdown.git"
+repo_dir = "tree-sitter-markdown"
+src_dir = "tree-sitter-markdown/src"
+symbol = "tree_sitter_markdown"
+enabled = false
